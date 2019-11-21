@@ -20,7 +20,7 @@
 	crm:P108_has_produced	<http://viaf.org/viaf/15873>.
 <http://viaf.org/viaf/15873>	crm:P131_is_identified_by	"Pablo Picasso";
 	dc:relation	crm:E7_Activity.
-crm:E7_Activity	dcterms:description	<http://dbpedia.org/page/Cubism>.
+	crm:E7_Activity	dcterms:description	<http://dbpedia.org/page/Cubism>.
 <http://dbpedia.org/page/Canvas>	crm:P90_has_value	"349.3 cm  × 776.6 cm"; 
 	crm:P90_has_value	"137.4 in  × 305.5 in".
 <http://www.geonames.org/2988507/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Paris>.
