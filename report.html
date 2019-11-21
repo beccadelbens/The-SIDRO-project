@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SIDRO</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+  <!--Icon -->
+  <link rel="icon" href="img/cider.png" type="image/x-icon"/>
+  <style>
+  #mainNav {
+    background: rgba(22, 22, 22, 0.8) !important;
+  }
+
+  .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .navbar-brand {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  body {
+    text-align: justify;
+  }
+
+  #theoretical-model {
+    margin-top: 25vh;
+  }
+
+  .rose {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6vh;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 8vh;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+  }
+
+  footer {
+    margin-top: 5vh;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+  }
+
+  .dropdown .dropdown-item:active a {
+    background: #64a19d !important;
+  }
+
+  .dropdown .dropdown-item:active:hover {
+    background: #64a19d !important;
+  }
+
+  table {
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 50%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .pol-sub {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+
+  h2 {
+    color: #ebc763;
+  }
+
+  .hrose {
+    color:#d4726e;
+  }
+
+  h3 {
+    border-bottom: 2px solid #d4726e;
+  }
+
+  #results {
+    border-bottom: 2px solid #ebc763;
+  }
+
+  th {
+    border: 3px solid black;
+    font-size: 110%;
+  }
+
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">SIDRO</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#projects">Workflow</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#page-top" role="button" aria-haspopup="true" aria-expanded="false">Full Report</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#theoretical-model">Theoretical model</a>
+                <a class="dropdown-item" href="#conceptual-model">Conceptual model</a>
+                <a class="dropdown-item" href="#ontology">Our ontology</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#sources">Our sources</a>
+                <a class="dropdown-item" href="#ke">Automatic <br>Knowledge Extraction</a>
+                <a class="dropdown-item" href="#sidroonguernica">SIDRO on Guernica</a>
+                <a class="dropdown-item" href="#knowgraph">Knowledge graph</a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="theoretical-model" src="img/theo-mod.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/freepik" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4 hrose">Theoretical model</h2>
+            <p>A theoretical model is usually developed to explain a situation or a phenomenon. In our case, it's useful to understand and be able to describe an artwork. 
+            <br>Firstly, we identified a set of sub-areas related to our starting point, the Artwork, which are:
+            <ul>
+              <li>the Historical Context;</li>
+              <li>the related Events;</li>
+              <li>the Content;</li>
+              <li>the Symbols;</li>
+              <li>the Interpretations;</li>
+              <li>the Debates around the interpretations.</li>
+            </ul>
+            </p>
+            <h3>Artwork</h3>
+            <p>We tried to answer to the questions around the metadata of the artwork (title, author, medium, etc.). In addition, we focused on the process of creation, through questions related to the place, the purpose and the historical context of the creation.
+              <ul>
+                <li>What is the title?</li>
+                <li>Who is the author?</li>
+                <li>Which art movement does the author belong to?</li>
+                <li>What is the type of artwork?</li>
+                <li>What is the medium?</li>
+                <li>What are the dimensions?</li>
+                <li>Where is it located?</li>
+                <li>When was it created?</li>
+                <li>Where was it created?</li>
+                <li>For what purpose was it created?</li>
+                <li>Which historical period is it related to?</li>
+              </ul>
+            </p>
+            <h3>Historical Context</h3>
+            <p>We decided to go deeper into the historical context of the artwork, since it often has a grade role to play as to what concerns the artwork itself.
+              <ul>
+                <li>What happened during this period?</li>
+                <li>Where did it happen?</li>
+                <li>When did it happen?</li>
+                <li>Why did it happen?</li>
+                <li>Who was involved?</li>
+                <li>What is the event related to the entity?</li>
+              </ul>
+            </p>
+            <h3>Event</h3>
+            <p>From the questions of the Historical Context, it became clear to us that a particular event could have a direct relation with the artwork. Therefore, we described it properly.
+              <ul>
+                <li>What happened during this event?</li>
+                <li>Where did it happen?</li>
+                <li>When did it happen?</li>
+                <li>Why did it happen?</li>
+                <li>What is the activity?</li>
+                <li>Who was involved?</li>
+              </ul>
+            </p>
+            <h3>Content</h3>
+            <p>We asked ourselves how to describe the content of an artwork, starting from its objective description and then moving to the subject to which it is related. Then we focused on the elements present in the content, analysing them and their relationships.
+              <ul>
+                <li>What is the objective description of the artwork?</li>
+                <li>What topic is it related to?</li>
+                <li>What is the subject of the artwork?</li>
+                <li>How does the artwork fit the main subject?</li>
+                <li>What is the element involved?</li>
+                <li>With what does it interact?</li>
+                <li>What does the element represent?</li>
+                <li>What do they represent as a group?</li>
+              </ul>
+            </p>
+            <h3>Symbol</h3>
+            <p>Objects of the Content could have a symbolic meaning. We tried to build a schema to describe the objective and metaphorical explanation of the symbol and link it to the related interpretations.
+              <ul>
+                <li>What is it represented by?</li>
+                <li>What does it represent metaphorically?</li>
+                <li>What is the interpretation?</li>
+                <li>Where does it get the meaning from?</li>
+              </ul>
+            </p>
+            <h3>Interpretation</h3>
+            <p>We analysed everything that concerns a particular interpretation: its content, its author and source, its reception and the relationship with other interpretations.
+              <ul>
+                <li>How is it considered?</li>
+                <li>What is the hypothesis?</li>
+                <li>Who is the author?</li>
+                <li>What is the basis of the hypothesis?</li>
+                <li>Where is this hypothesis contained?</li>
+                <li>What is the similar interpretation?</li>
+                <li>What is it involved in?</li>
+                <li>Who sustain the interpretation?</li>
+              </ul>
+            </p>
+            <h3>Debate</h3>
+            <p>In this last area, we layed emphasis on the disputes which can arise from the contrast between different interpretations of the same symbol.
+              <ul>
+                <li>What is the object of the debate?</li>
+                <li>What is the description of the debate?</li>
+                <li>What are the interpretations involved?</li>
+                <li>What is the prevaling interpretation?</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="conceptual-model" src="img/conc-mod.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/smashicons" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4 hrose">Conceptual model</h2>
+            <p>Once we had defined the questions related to our central interest, we answered to them by creating triples (Subject - Predicate - Object), using existing ontologies: <a href="http://www.cidoc-crm.org/sites/default/files/cidoc_crm_version_5.0.4.pdf"target="_blank">CIDOC-CRM</a>, <a href="https://www.w3.org/TR/rdf-schema/"target="_blank">RDF</a>, <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"target="_blank">DC</a>, <a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation//EDM_Definition_v5.2.8_102017.pdf"target="_blank">EDM</a>, <a href="http://xmlns.com/foaf/spec/"target="_blank">FOAF</a>, <a href="http://dati.beniculturali.it/lode/extract?url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl"target="_blank">ArCo</a>. In particular, CIDOC-CRM helped us in creating the structure, since it's an ontology devoted to the interchange of varied cultural heritage information.</p>
+            <p>On the figures below, the highlighted cells stand for classes and properties that we have answered to using our ontology.</p>
+            <object data="Conceptual-model-SIDRO.pdf" type="application/pdf" width="100%" height="750px"></object>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="ontology" src="img/cider.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/freepik" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4 hrose">Our ontology: SIDRO</h2>
+            <p>SIDRO goes to integrate the description one could wish to provide of an artwork through the existing ontologies of the domain. It gives the possibility to describe the content and to shift towards the metaphoric level by talking of what the content represents, i.e. the symbolism. The different interpretations that arise from the content and the symbolic level can be described through the ontology, as well as the debates that emerge between them.</p>
+            <p>We created the ontology through <a href="https://protege.stanford.edu/"target="_blank">Protegé</a> and then we imported it on <a href="https://github.com/dgarijo/Widoco"target="_blank">Widoco</a> to produce the documentation draft.</p>
+            <p>Get the full documentation <a href="https://sidrontology.github.io/sidro/index-en.html"target="_blank">here</a>.</p>
+            <p>Download the knowledge graph of the ontology <a href="SIDRO_graph.png"target="_blank" download>here</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="sources" src="img/sources.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/freepik" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4">Our sources</h2>
+            <p>Having chosen Guernica as our case study, we went further to select a number of texts which present many contradictory interpretations around the content and the symbolism of the painting. These texts are the following:</p>
+            <ul>
+              <li>Carla Gottlieb (Winter, 1964-1965) <em>The meaning of the Bull and Horse in Guernica</em>, Art Journal, 24:2, 106-112;</li>
+              <li>Eugene B. Cantelupe (1971) <em>Picasso's Guernica</em>, Art Journal, 31:1, 18-21;</li>
+              <li>Rudolf Arnheim (1981) <em>Russell: Picasso's Guernica: The Labyrinth of Narrative and Vision</em>, Studies in Visual Communication, 7:2, 84-88;</li>
+              <li>Ora Attia (2011) <em>Separation and individuation in Picasso’s Guernica</em>, The Internation Journal of Psychoanalysis, 92, 1561–1581;</li>
+              <li>Herschel B. Chipp (1973) <em>Guernica: Love, War, and the Bullfight</em>, Art Journal, 33:2, 100-115;</li>
+              <li>Jordi Xifra (2018) <em>Publicizing atrocity and legitimizing outrage: Picasso’s Guernica</em>, Public Relations Review, 44:1, 28-36.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="ke" src="img/auto-extr.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/smashicons" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4">Automatic Knowledge Extraction</h2>
+            <p>By using knowledge extraction, our purpose was to automatically retrieve the symbols present in the text of an interpretation. Moreover, we wanted to perform sentiment analysis on those portions where the symbol is present to understand the position of the author with respect to the symbol itself. With these information, we assumed to be able to look for the presence of a certain symbol in other works and compare the authors' statements.</p>
+            <p>To reach these goals, we used a series of Python functions.</p> 
+            <p>First of all, we needed to open the file either in .txt, .pdf (through <a href="https://pypi.org/project/PyPDF2/"target="_blank">PyPDF2</a>) or by inputting it directly as a string:</p>
+            <pre>
+            #txt
+            text_txt = open("sample.txt", "r")
+            text = text_txt.read()
+
+            #pdf
+            with open('sample.pdf','rb') as pdf_file, open('sample.txt', 'w') as text_file:
+              read_pdf = PyPDF2.PdfFileReader(pdf_file)
+              number_of_pages = read_pdf.getNumPages()
+              for page_number in range(number_of_pages):
+                page = read_pdf.getPage(page_number)
+                page_content = page.extractText()
+                text_file.write(page_content)
+                text_txt = open('sample.txt', "r")
+                text = text_txt.read()
+
+            #string
+            text= "sample"
+            </pre>
+            <p>Then, through <a href="https://www.nltk.org"target="_blank">NLTK library</a>, we preprocessed the text to inspect it by making it lowercase and by removing numbers, punctuation and stopwords. By means of <a href="https://wordnet.princeton.edu"target="_blank">Wordnet</a>, we also performed POS tagger and lemmatizer in order to reduce the number of outcomes and avoid repetitions.</p>
+            <pre>
+            #lowercase text
+            def to_lower(text):
+              return ' '.join([w.lower() for w in word_tokenize(text)])
+
+            #remove numbers
+            def remove_numbers(text):
+              return ''.join(c for c in text if not c.isdigit())
+
+            #remove stopwords
+            def remove_stopwords(text):
+              no_stop = text.split()
+              stopwordz = stopwords.words('english')
+              for word in no_stop:
+                for stopword in stopwordz:
+                  if word == stopword:
+                    no_stop.remove(word)
+              return ' '.join(no_stop)
+
+            #remove punctuation
+            def strip_punctuation(text):
+              tokenizer = RegexpTokenizer(r'\w+')
+              return ' '.join(tokenizer.tokenize(text))
+
+            #pos tagger
+            def get_wordnet_pos(word):
+              tag = nltk.pos_tag([word])[0][1][0].upper()
+              tag_dict = {"J": wordnet.ADJ,
+                          "N": wordnet.NOUN,
+                          "V": wordnet.VERB,
+                          "R": wordnet.ADV}
+              return tag_dict.get(tag, wordnet.NOUN)
+
+            #lemmatization
+            def lemmatization(text):
+              lemmatizer = WordNetLemmatizer()
+              output = [lemmatizer.lemmatize(w, get_wordnet_pos(w)) for w in nltk.word_tokenize(text)]
+              return ' '.join(output)
+
+            #preprocess text
+            def preprocess(text):
+              lower_text = to_lower(text)
+              text_no_num = remove_numbers(lower_text)
+              text_no_stopwords = remove_stopwords(text_no_num)
+              text_no_punct = strip_punctuation(text_no_stopwords)
+              preprocessed_text = lemmatization(text_no_punct)
+              return preprocessed_text
+            </pre>
+            <p>On the preprocessed text, we carried out the frequency analysis and from the output we created a dictionary in a decrescent order, having as key the term and as value its total frequency.</p>
+            <pre>
+            #frequency list
+            def freq(text):
+              ref_text = preprocess(text)
+              hash_map = {}
+              for word in ref_text.split():
+                if word in hash_map:
+                  hash_map[word] = hash_map[word] + 1
+                else:
+                  hash_map[word] = 1
+              return hash_map
+
+            #dictionary in a decreasing order
+            def order(text):
+              sorted_dict = sorted(freq(text).items(), key=operator.itemgetter(1))
+              return collections.OrderedDict(reversed(sorted_dict))
+            </pre>
+            <p>Through the use of <a href="https://textblob.readthedocs.io/en/dev/"target="_blank">TextBlob</a>, we applied sentiment analysis on the portion of text and we obtained two results: Polarity and Subjectivity. Polarity is a float which lies in the range of -1, negative statement, and 1, positive one. Subjectivity is also a float which lies in the range of [0,1], where 0 is totally objective and 1 totally subjective.</p>
+            <pre>
+            def sentiment_analysis(text):
+              ref_text = TextBlob(text)
+              return ref_text.sentiment
+            </pre>
+            <p>Once you have the most frequent words, you may want to search for them in other texts. We considered to develop a function aimed at retrieving a certain string in a text and obtain the portion in which it is found. Nonetheless, being based on a line by line inspection, it was much dependent on the encoding of the text. In the end, since we were dealing with .pdf, we found much more reliable and easier to use the Adobe built-in command 'ctrl+F'.</p>
+            <p>During the automatic process, we encountered several problems, concerning mainly stopwords' removal, symbols not emerging from the frequency list and the common problems related to sentiment analysis. The solution in these situations was to integrate the automatic process with close reading, by checking the results and compare them with the expected outcomes and by selecting smaller portions of the text where we expected to find something relevant.</p>
+            <p>This set of operations could be consider as a starting point to be further developed in order to automatize the retrieval of information to fill the ontology graph.</p>
+
+            <h3 id="results">Results</h3>
+            <p>Having chosen the texts, we went on to carry out an automatic text extraction on them using the Python functions we developed. The process was carried out on the whole text or on selected portions, according to the nature of the text, as specified below. During this process, for each text we selected the 15 most frequent words, as you can see below. The terms in the highlighted cells are the emerged symbols while the bold terms help us understand the semantic field of the text.</p>
+          
+            <h4>Carla Gottlieb<br><em>"The meaning of the Bull and the Horse in Guernica"</em></h4>
+            <p>This text and the following one were analyzed in two ways: in the first case the automatic extraction was applied within the whole text; in the second case only to those parts that are more focused on symbols.</p>
+            <p>In the case of the source "The meaning of the Bull and the Horse in Guernica" we noticed in both cases that the symbols extracted are the same. The other terms extracted make us notice how the text is centered on the interpretation of symbols ("interpretation","symbol"), whose origin is identified in the Spanish Civil War ("spain","spanish","franco").</p>
+            <table border="1px">
+              <tr>
+                <th>Whole text</th>
+                <th>Highlighted parts</th>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('bull', 54)</td>
+                <td style="background-color: #ebc763">('bull', 37)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('horse', 37)</td>
+                <td style="background-color: #ebc763">('horse', 18)</td>
+              </tr>
+              <tr>
+                <td>('picasso', 36)</td>
+                <td style="background-color: #ebc763">('woman', 17)</td>
+              </tr>
+              <tr>
+                <td>('guernica', 25)</td>
+                <td>('picasso', 16)</td>
+              </tr>
+              <tr>
+                <td><b>('spain', 23)</b></td>
+                <td>('not', 12)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('woman', 21)</td>
+                <td style="background-color: #ebc763">('mother', 12)</td>
+              </tr>
+              <tr>
+                <td><b>('franco', 18)</b></td>
+                <td><b>('spanish', 12)</b></td>
+              </tr>
+              <tr>
+                <td><b>('spanish', 15)</b></td>
+                <td>('guernica', 12)</td>
+              </tr>
+              <tr>
+                <td>('not', 14)</td>
+                <td style="background-color: #ebc763">('light', 10)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('light', 13)</td>
+                <td>('symbol', 10)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('mother', 13)</td>
+                <td><b>('spain', 10)</b></td>
+              </tr>
+              <tr>
+                <td>('mural', 13)</td>
+                <td><b>('franco', 9)</b></td>
+              </tr>
+              <tr>
+                <td><b>('symbol', 11)</b></td>
+                <td><b>('interpretation', 7)</b></td>
+              </tr>
+              <tr>
+                <td><b>('interpretation', 11)</b></td>
+                <td>('hand', 6)</td>
+              </tr>
+              <tr>
+                <td>('lie', 11)</td>
+                <td>('head', 6)</td>
+              </tr>
+            </table>
+
+            <div class="pol-sub">
+              <p><b>Whole text</b></p>
+              <p>Polarity=0.0582972476241707</p>
+              <p>Subjectivity=0.37891765285996093</p>
+              <p><b>Highlighted parts</b></p>
+              <p>Polarity=0.03842944460842187</p>
+              <p>Subjectivity=0.3633068304801261</p>
+            </div>
+
+            <h4>Eugene B. Cantelupe<br><em>"Picasso' Guernica"</em></h4>
+            <p>Also in the second case, "Picasso's Guernica", the symbols extracted are the same both for the whole text and for the highlighted parts. In this case we see the connection of the painting with Greek classicism ('classical', 'Greek', 'sculpture'), in fact the author tries to identify a connection between the composition of Guernica and the Parthenon Marbles in the new Duveen Gallery of the British Museum.</p>
+            <table border="1px">
+              <tr>
+                <th>Whole text</th>
+                <th>Highlighted parts</th>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('bull', 24)</td>
+                <td style="background-color: #ebc763">('bull', 13)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('horse', 23)</td>
+                <td style="background-color: #ebc763">('horse', 12)</td>
+              </tr>
+              <tr>
+                <td>('picasso', 20)</td>
+                <td>('not', 7)</td>
+              </tr>
+              <tr>
+                <td>('mural', 17)</td>
+                <td style="background-color: #ebc763">('lamp', 7)</td>
+              </tr>
+              <tr>
+                <td>('guernica', 13)</td>
+                <td>('human', 6)</td>
+              </tr>
+              <tr>
+                <td>('art', 11)</td>
+                <td style="background-color: #ebc763">('woman', 6)</td>
+              </tr>
+              <tr>
+                <td>('not', 9)</td>
+                <td>('guernica', 4)</td>
+              </tr>
+              <tr>
+                <td>('artist', 8)</td>
+                <td>('well', 4)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('lamp', 8)</td>
+                <td>('mural', 4)</td>
+              </tr>
+              <tr>
+                <td><b>('classical', 8)</b></td>
+                <td>('figure', 4)</td>
+              </tr>
+              <tr>
+                <td>('theme', 8)</td>
+                <td>('head', 4)</td>
+              </tr>
+              <tr>
+                <td>('girl', 7)</td>
+                <td>('fascism', 3)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('woman', 7)</td>
+                <td>('painting', 3)</td>
+              </tr>
+              <tr>
+                <td><b>('greek', 7)</b></td>
+                <td>('repeat', 3)</td>
+              </tr>
+              <tr>
+                <td><b>('sculpture', 7)</b></td>
+                <td>('holding', 3)</td>
+              </tr>
+            </table>
+
+            <div class="pol-sub">
+              <p><b>Whole text</b></p>
+              <p>Polarity=0.018959161586712608</p>
+              <p>Subjectivity=0.42161719233147793</p>
+              <p><b>Highlighted parts</b></p>
+              <p>Polarity=-0.03080602590096261</p>
+              <p>Subjectivity=0.41790463404387445</p>
+            </div>
+
+            <h4>Rudolf Arnheim<br><em>"Russell: Picasso's Guernica: The Labyrinth of Narrative and Vision"</em></h4>
+            <p>In the case of this source, the functions were runned on the whole text and on the final section of the essay, where Arnheim criticizes more harshly Russell for his "misreadings of perceptual data" (Arnheim, p.5).</p>
+            <table border="1px">
+              <tr>
+                <th>Whole text</th>
+                <th>... (p. 5-6)</th>
+              </tr>
+              <tr>
+                <td>('guernica', 25)</td>
+                <td style="background-color: #ebc763">('bull', 5)</td>
+              </tr>
+              <tr>
+                <td>('picasso', 21)</td>
+                <td style="background-color: #ebc763">('woman', 4)</td>
+              </tr>
+              <tr>
+                <td><b>('russell', 19)</b></td>
+                <td>('guernica', 4)</td>
+              </tr>
+              <tr>
+                <td>('work', 15)</td>
+                <td>('picasso', 3)</td>
+              </tr>
+              <tr>
+                <td>('art', 11)</td>
+                <td>('exist', 3)</td>
+              </tr>
+              <tr>
+                <td>('painting', 11)</td>
+                <td><b>('russell', 3)</b></td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('bull', 10)</td>
+                <td>('art', 3)</td>
+              </tr>
+              <tr>
+                <td>('artist', 10)</td>
+                <td>('work', 3)</td>
+              </tr>
+              <tr>
+                <td>('picture', 9)</td>
+                <td>('statement', 3)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('woman', 7)</td>
+                <td>('central', 2)</td>
+              </tr>
+              <tr>
+                <td>('book', 6)</td>
+                <td><b>('mutilation', 2)</b></td>
+              </tr>
+              <tr>
+                <td>('frank', 5)</td>
+                <td>('language', 2)</td>
+              </tr>
+              <tr>
+                <td>('statement', 5)</td>
+                <td><b>('deformation', 2)</b></td>
+              </tr>
+              <tr>
+                <td>('official', 5)</td>
+                <td>('figure', 2)</td>
+              </tr>
+              <tr>
+                <td>('century', 5)</td>
+                <td>('artist', 2)</td>
+              </tr>
+            </table>
+
+            <div class="pol-sub">
+              <p><b>Whole text</b></p>
+              <p>Polarity=0.12560756489327915</p>
+              <p>Subjectivity=0.4441845370416797</p>
+              <p><b>P. 5-6</b></p>
+              <p>Polarity=0.09802102659245517</p>
+              <p>Subjectivity=0.45725623582766445</p>
+            </div>
+
+            <p>What we can highlight from this analysis is the focus on two symbols, the bull and the woman. Moreover, as expected, Russell is singled out many times. Despite Arnheim's direct attack, the polarity detected is actually positive.</p>
+
+            <h4>Ora Attia<br><em>"Separation and Individuation in Picasso's Guernica"</em></h4>
+            <p>Since Attia's essay also involved the study of the preparatory sketches, an analysis on the whole text could be misleading. For this reason, the automatic knowledge extraction was performed on two selected sections. The first one is the paragraph "Guernica and childhood traumas", where Attia associates the representation of Guernica's bombing with Malaga's earthquake, which traumatized Picasso as a child. The second is "Separation and maturation", in which Attia explains the nature and role of the figures in the composition with respect to Picasso's inner process of separation and individuation.</p>
+            <table border="1px">
+              <tr>
+                <th>Guernica and childhood traumas (p. 4)</th>
+                <th>Separation and maturation (p. 7-8)</th>
+              </tr>
+              <tr>
+                <td><b>('earthquake', 4)</b></td>
+                <td style="background-color: #ebc763">('bull', 20)</td>
+              </tr>
+              <tr>
+                <td><b>('picasso', 4)</b></td>
+                <td style="background-color: #ebc763">('mare', 14)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('child', 3)</td>
+                <td style="background-color: #ebc763">('composition', 10)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('mother', 3)</td>
+                <td>('figure', 10)</td>
+              </tr>
+              <tr>
+                <td><b>('little', 3)</b></td>
+                <td style="background-color: #ebc763">('mother', 10)</td>
+              </tr>
+              <tr>
+                <td><b>('sister', 3)</b></td>
+                <td><b>('separation', 10)</b></td>
+              </tr>
+              <tr>
+                <td>('guernica', 3)</td>
+                <td><b>('picasso', 10)</b></td>
+              </tr>
+              <tr>
+                <td><b>('hostile', 2)</b></td>
+                <td>('study', 8)</td>
+              </tr>
+              <tr>
+                <td><b>('rage', 2)</b></td>
+                <td style="background-color: #ebc763">('soldier', 7)</td>
+              </tr>
+              <tr>
+                <td><b>('home', 2)</b></td>
+                <td><b>('death', 7)</b></td>
+              </tr>
+              <tr>
+                <td><b>('malaga', 2)</b></td>
+                <td><b>('birth', 5)</b></td>
+              </tr>
+              <tr>
+                <td><b>('gedo', 2)</b></td>
+                <td>('sketches', 5)</td>
+              </tr>
+              <tr>
+                <td><b>('birth', 2)</b></td>
+                <td><b>('detached', 4)</b></td>
+              </tr>
+              <tr>
+                <td>('attack', 2)</td>
+                <td>('mature', 4)</td>
+              </tr>
+              <tr>
+                <td>('emotion', 1)</td>
+                <td><b>('destruction', 4)</b></td>
+              </tr>
+            </table>
+
+            <div class="pol-sub">
+              <p><b>Guernica and childhood traumas (p. 4)</b></p>
+              <p>Polarity=-0.01854838709677419</p>
+              <p>Subjectivity=0.4083333333333333</p>
+              <p><b>Separation and maturation (p. 7-8)</b></p>
+              <p>Polarity=0.02681628056628057</p>
+              <p>Subjectivity=0.41636261261261276</p>
+            </div>
+
+            <p>From the results, it is evident that the focus is on many figures of the painting and the composition itself. In the first section, it is possible to infer the narration of Malaga's earthquake and the one of the birth of Picasso's sister, the premises for Attia's psychological analysis. In the second section, what stand out are words related to separation ('death', 'destruction', 'detached', 'separation').</p>
+
+            <h4>Herschel B. Chipp<br><em>"Guernica Love, War, and the Bullfight"</em></h4>
+            <p>In this text, the author talks more of the process of creation of the painting from the first idea Picasso had of the painting Guernica to the end product we have today. The automatic extraction on the whole text yield as we would expect the general view of what is the subject matter of the article through the terms ranked as most frequent like 'Picasso', 'Guernica', 'horse', etc. On the automatic extraction of the highlighted parts, more symbols were identified and terms used to describe their meaning in the article were also present in the result. It was clear from the two results that the two principal symbols are the bull and the horse. The polarity and the subjectivity of the text was neutral.</p>
+            <table border="1px">
+              <tr>
+                <th>Whole text</th>
+                <th>Highlighted parts</th>
+              </tr>
+              <tr>
+                <td><b>('picasso', 81)</b></td>
+                <td style="background-color: #ebc763">('bull', 50)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('bull', 56)</td>
+                <td style="background-color: #ebc763">('horse', 47)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('horse', 56)</td>
+                <td><b>('picasso', 47)</b></td>
+              </tr>
+              <tr>
+                <td> <b>('painting', 36)</b></td>
+                <td > <b>('painting', 25)</b></td>
+              </tr>
+              <tr>
+                <td><b>('guernica', 25)</b></td>
+                <td>('art', 17)</td>
+              </tr>
+              <tr>
+                <td><b>('minotaur', 23)</b></td>
+                <td><b>('guernica', 17)</b></td>
+              </tr>
+              <tr>
+                <td>('art', 23)</td>
+                <td>('man', 13)</td>
+              </tr>
+              <tr>
+                <td>('man', 20)</td>
+                <td><b>('personal', 13)</b></td>
+              </tr>
+              <tr>
+                <td><b>('therese', 17)</b></td>
+                <td> <b>('minotaur', 11)</b></td>
+              </tr>
+              <tr>
+                <td><b>('marie', 17)</b></td>
+                <td><b>('meaning', 11)</b></td>
+              </tr>
+              <tr>
+                <td> <b>('personal', 16)</b></td>
+                <td>('life', 11)</td>
+              </tr>
+              <tr>
+                <td>('spanish', 14)</td>
+                <td><b>('ritual', 10)</b></td>
+              </tr>
+              <tr>
+                <td>('april', 14)</td>
+                <td><b>('bullfight', 9)</b></td>
+              </tr>
+              <tr>
+                <td>('paris', 14),</td>
+                <td style="background-color: #ebc763">('woman', 8)</td>
+              </tr>
+              <tr>
+                <td><b>('meaning', 12)</b></td>
+                <td>('beast', 8)</td>
+              </tr>
+            </table>
+
+            <div class="pol-sub">
+              <p><b>Whole text</b></p>
+              <p>Polarity=0.06847781413509117</p>
+              <p>Subjectivity=0.45873880249467164</p>
+              <p><b>Highlighted parts</b></p>
+              <p>Polarity=0.07889367296375382</p>
+              <p>Subjectivity=0.5058929689657458</p>
+            </div>
+
+            <h4>Jordi Xifra, Robert L. Heath<br><em>"Publicizing atrocity and legitimizing outrage: Picasso’s Guernica"</em></h4>
+            <p>In this text, the author tries to talk of how art could be used to criticize the actions of the government. During the extraction on the whole text, words related more to the story behind the creation of the painting came up such as countries, war terms, etc. On the extraction of the highlighted parts, more words concerning the painting were present such as the symbols, words for the themes in the painting and meaning of the symbol. Since the text was on showing how sad situations well described through an artwork could be a good tool in politics, the polarity of the highlighted parts which talked more of the painting is negative and subjectivity is objective.</p>
+            <table border="1px">
+              <tr>
+                <th>Whole text</th>
+                <th>Highlighted parts</th>
+              </tr>
+              <tr>
+                <td><b>('guernica', 82)</b></td>
+                <td><b>('picasso', 27)</b></td>
+              </tr>
+              <tr>
+                <td ><b>('picasso', 64)</b></td>
+                <td ><b>('guernica', 22)</b></td>
+              </tr>
+              <tr>
+                <td><b>('spanish', 44)</b></td>
+                <td style="background-color: #ebc763">('horse', 21)</td>
+              </tr>
+              <tr>
+                <td >('war', 43)</td>
+                <td style="background-color: #ebc763">('bull', 11)</td>
+              </tr>
+              <tr>
+                <td>('painting', 30)</td>
+                <td><b>('painting', 9)</b></td>
+              </tr>
+              <tr>
+                <td>('bombing', 27)</td>
+                <td><b>('people', 9)</b></td>
+              </tr>
+              <tr>
+                <td><b>('republican', 26)</b></td>
+                <td style="background-color: #ebc763">('child', 7)</td>
+              </tr>
+              <tr>
+                <td>('art', 26)</td>
+                <td>('spanish', 7)</td>
+              </tr>
+              <tr>
+                <td>('public', 25)</td>
+                <td >('war', 7)</td>
+              </tr>
+              <tr>
+                <td style="background-color: #ebc763">('horse', 22)</td>
+                <td>('pain', 7)</td>
+              </tr>
+              <tr>
+                <td >('spain', 21),</td>
+                <td style="background-color: #ebc763">('sword', 6)</td>
+              </tr>
+              <tr>
+                <td>('government', 20)</td>
+                <td>('dead', 6)</td>
+              </tr>
+              <tr>
+                <td>('basque', 20),</td>
+                <td><b>('represents', 6)</b></td>
+              </tr>
+              <tr>
+                <td>('atrocity', 18)</td>
+                <td>('death', 6)</td>
+              </tr>
+              <tr>
+                <td><b>('paris', 16)</b></td>
+                <td style="background-color: #ebc763">('mother', 5)</td>
+              </tr>
+            </table>
+
+            <div class="pol-sub">
+              <p><b>Whole text</b></p>
+              <p>Polarity=0.03881405518600642</p>
+              <p>Subjectivity=0.37375422891810084</p>
+              <p><b>Highlighted parts</b></p>
+              <p>Polarity=-0.020091871091871088</p>
+              <p>Subjectivity=0.3880420875420874</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="sidroonguernica" src="img/sidroONguernica.png" data-toggle="tooltip" data-placement="top" title="Picasso icon made by https://www.flaticon.com/authors/freepik" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4">SIDRO on Guernica</h2>
+            <p>From our sources, after the automatic extraction and the collection of the results we were interested in, we went ahead to apply our ontology (SIDRO) on the painting and, for what concerns the symbols, on the most prominent ones.</p>
+            <p>To fill our knowledge graph through <a href="https://wiki.dbpedia.org/"target="_blank">DBpedia</a>, we used a simple SPARQL query:</p>
+            <pre>
+            PREFIX : <http://dbpedia.org/resource/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+            SELECT ?s WHERE {
+            ?s rdfs:label "GUERNICA"@en
+            }
+            </pre>
+            <p>In the other cases, we used URIs from <a href="https://viaf.org/"target="_blank">VIAF</a>, <a href="https://www.geonames.org/"target="_blank">GeoNames</a>, <a href="https://www.worldcat.org/"target="_blank">WorldCat</a>, <a href="http://id.loc.gov/authorities/subjects.html"target="_blank">Library of Congress Subject Headings (LCSH)</a>, <a href="http://www.getty.edu/research/tools/vocabularies/aat/"target="_blank">Art &copy; Architecture Thesaurus (AAT)</a>.</p>
+            <p>The output of this process can be seen <a href="turtle_completo.ttl"target="_blank" download>here</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid rose" id="knowgraph" src="img/kno-graph.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/geotatah" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4">Knowledge graph</h2>
+            <p>For the realization of the knowledge graph we used the web service <a href="http://www.ldf.fi/service/rdf-grapher"target="_blank">RDF grapher</a>, which parses data and creates a graph visualization. As input data for the grapher we used the Turtle serialization of our ontology. The result can be seen here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      This website was created as project for the final examination of the course Knowledge Representation and Extraction, <br>during the a.y. 2019/2020 at the University of Bologna.
+      <br>
+      <br>Our team: Rebecca Del Bene, Leticia Hamvegam and Arianna Pizzicori.
+      <br>Copyright &copy; SIDRO 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
