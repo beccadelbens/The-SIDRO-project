@@ -75,8 +75,3 @@
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Suffering of people and animals wrenched by violence and chaos.".
 <http://dbpedia.org/page/Bombing_of_Guernica>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Picasso painted 'Guernica' as immediate reaction to the bombing on the homologous Basque town during Spanish Civil War.".
-
-
-
-
-
