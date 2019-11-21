@@ -5,6 +5,9 @@
 @prefix edm: <http://www.europeana.eu/schemas/edm/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
+#################################################################
+#    Painting
+#################################################################
 
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork>	crm:P102_has_title	<http://dbpedia.org/page/Guernica_(Picasso)>;
 	dcterms:created	"1937";
@@ -24,6 +27,9 @@ crm:E7_Activity	dcterms:description	<http://dbpedia.org/page/Cubism>.
 <https://www.geonames.org/6452757/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa>.
 <https://viaf.org/viaf/163060943/>	dcterms:description	"During the 1937 International Exposition of Art and Technology in Modern Life in Paris, France, the painting Guernica which was painted at the request of the Spagnish Nationalists was exhibited at the Spanish display being one of the artworks representing the Spanish pavilion.".
 
+#################################################################
+#    Historical Context
+#################################################################
 
 <http://www.geonames.org/2510769/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Spain>.
 <http://dbpedia.org/page/Spanish_Civil_War>	dcterms:description	"The Spanish Civil War (Spanish: Guerra Civil Española) was a civil war in Spain fought from 1936 to 1939. Republicans loyal to the left-leaning Second Spanish Republic, in alliance with anarchists, fought against a revolt by the Nationalists, an alliance of Falangists, monarchists, conservatives and Catholics, led by a military group among whom General Francisco Franco soon achieved a preponderant role. Due to the international political climate at the time, the war had many facets, and was variously viewed as class struggle, a war of religion, a struggle between dictatorship and republican democracy, between revolution and counterrevolution, between fascism and communism.";
@@ -37,6 +43,9 @@ crm:E7_Activity	dcterms:description	<http://dbpedia.org/page/Cubism>.
 	crm:P11_had_participant	<http://viaf.org/viaf/153767952>;
 	dc:relation	<http://dbpedia.org/page/Bombing_of_Guernica>.
 
+#################################################################
+#    Event
+#################################################################
 
 <http://dbpedia.org/page/Bombing_of_Guernica>	dcterms:description	"The bombing of Guernica (26 April 1937) was an aerial bombing of the Basque town of Guernica during the Spanish Civil War. It was carried out, at the behest of Francisco Franco's rebel Nationalist faction, by its allies, the Nazi German Luftwaffe's Condor Legion and the Fascist Italian Aviazione Legionaria, under the code name 'Operation Rügen'. The operation opened the way to Franco's capture of Bilbao and his victory in northern Spain.";
 	edm:happenedAt	<https://www.geonames.org/3120989/>;
@@ -45,6 +54,9 @@ crm:E7_Activity	dcterms:description	<http://dbpedia.org/page/Cubism>.
 	crm:P11_had_participant	"Citizens of Gernika Lumo.".
 <https://www.geonames.org/3120989/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Guernica>.
 
+#################################################################
+#    Content
+#################################################################
 
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content>.
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content>	
