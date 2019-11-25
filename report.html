@@ -364,6 +364,9 @@
             <p>To reach these goals, we used a series of Python functions.</p> 
             <p>First of all, we needed to open the file either in .txt, .pdf (through <a href="https://pypi.org/project/PyPDF2/"target="_blank">PyPDF2</a>) or by inputting it directly as a string:</p>
             <pre>
+            import PyPDF2
+            from PyPDF2 import PdfFileReader, PdfFileMerger, PageRange
+            
             #txt
             text_txt = open("sample.txt", "r")
             text = text_txt.read()
@@ -384,6 +387,11 @@
             </pre>
             <p>Then, through <a href="https://www.nltk.org"target="_blank">NLTK library</a>, we preprocessed the text to inspect it by making it lowercase and by removing numbers, punctuation and stopwords. By means of <a href="https://wordnet.princeton.edu"target="_blank">Wordnet</a>, we also performed POS tagger and lemmatizer in order to reduce the number of outcomes and avoid repetitions.</p>
             <pre>
+            import nltk, nltk.tokenize, nltk.corpus, nltk.stem
+            from nltk.tokenize import word_tokenize, RegexpTokenizer
+            from nltk.corpus import stopwords, wordnet
+            from nltk.stem import WordNetLemmatizer
+
             #lowercase text
             def to_lower(text):
               return ' '.join([w.lower() for w in word_tokenize(text)])
@@ -433,6 +441,8 @@
             </pre>
             <p>On the preprocessed text, we carried out the frequency analysis and from the output we created a dictionary in a decrescent order, having as key the term and as value its total frequency.</p>
             <pre>
+            import operator, collections
+            
             #frequency list
             def freq(text):
               ref_text = preprocess(text)
@@ -451,13 +461,16 @@
             </pre>
             <p>Through the use of <a href="https://textblob.readthedocs.io/en/dev/"target="_blank">TextBlob</a>, we applied sentiment analysis on the portion of text and we obtained two results: Polarity and Subjectivity. Polarity is a float which lies in the range of -1, negative statement, and 1, positive one. Subjectivity is also a float which lies in the range of [0,1], where 0 is totally objective and 1 totally subjective.</p>
             <pre>
+            import textblob
+            from textblob import TextBlob
+            
             def sentiment_analysis(text):
               ref_text = TextBlob(text)
               return ref_text.sentiment
             </pre>
             <p>Once you have the most frequent words, you may want to search for them in other texts. We considered to develop a function aimed at retrieving a certain string in a text and obtain the portion in which it is found. Nonetheless, being based on a line by line inspection, it was much dependent on the encoding of the text. In the end, since we were dealing with .pdf, we found much more reliable and easier to use the Adobe built-in command 'ctrl+F'.</p>
             <p>During the automatic process, we encountered several problems, concerning mainly stopwords' removal, symbols not emerging from the frequency list and the common problems related to sentiment analysis. The solution in these situations was to integrate the automatic process with close reading, by checking the results and compare them with the expected outcomes and by selecting smaller portions of the text where we expected to find something relevant.</p>
-            <p>This set of operations could be consider as a starting point to be further developed in order to automatize the retrieval of information to fill the ontology graph.</p>
+            <p>This set of operations could be considered as a starting point to be further developed in order to automatize the retrieval of information to fill the ontology graph.</p>
 
             <h3 id="results">Results</h3>
             <p>Having chosen the texts, we went on to carry out an automatic text extraction on them using the Python functions we developed. The process was carried out on the whole text or on selected portions, according to the nature of the text, as specified below. During this process, for each text we selected the 15 most frequent words, as you can see below. The terms in the highlighted cells are the emerged symbols while the bold terms help us understand the semantic field of the text.</p>
