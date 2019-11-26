@@ -990,6 +990,185 @@
         <div class="col-lg-5">
         </div>
         <div class="col-lg-2">
+          <img class="img-fluid rose" id="knowgraph" src="img/query.png" data-toggle="tooltip" data-placement="top" title="https://www.flaticon.com/authors/wanicon" alt="" width="150px">
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-12">
+          <div class="p-5">
+            <h2 class="display-4">SPARQL queries</h2>
+            <p>In this last section we queried our description of Guernica to infer knowledge through the results. For this task we used a web service called <a href="https://jena.apache.org/documentation/fuseki2/">Apache Jena Fuseki</a> which allows us to upload our description document, written in Turtle, and query it using SPARQL. 
+            <br>We executed several queries which gave us the following results.</p>
+            <h5 style="text-decoration: underline; text-align:center; margin:5vh 0px"><b>What does the bull represent?</b></h5>
+            <pre style="overflow: hidden">
+BASE &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+PREFIX sidro: &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+
+SELECT ?object
+WHERE {
+  &lt;http://dbpedia.org/page/Bull&gt; &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents&gt; ?object
+}
+LIMIT 100</pre>
+
+            <table border="1 px" style="margin-bottom:10vh">
+              <tr><th>Object</th></tr>  
+              <tr><td>https://dictionary.cambridge.org/us/dictionary/english/winner</td></tr>
+              <tr><td>http://viaf.org/viaf/15873</td></tr>
+              <tr><td>http://dbpedia.org/page/Spaniards</td></tr>
+              <tr><td>http://dbpedia.org/page/Bullfighting</td></tr>
+              <tr><td>http://dbpedia.org/page/Nazism</td></tr>
+              <tr><td>https://viaf.org/viaf/15873/</td></tr>
+              <tr><td>http://dbpedia.org/page/Category:Nationalists</td></tr>
+              <tr><td>http://dbpedia.org/page/Minotaur</td></tr>
+              <tr><td>http://dbpedia.org/page/People</td></tr>
+              <tr><td>http://dbpedia.org/page/Francoist_Spain</td></tr>
+            </table>
+
+            <h5 style="text-decoration: underline; text-align:center; margin:5vh 0px"><b>What does the horse represent?</b></h5>
+
+            <pre style="overflow: hidden">
+BASE &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+PREFIX sidro: &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+
+SELECT ?object
+WHERE {
+  &lt;http://dbpedia.org/page/Horse&gt; &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents&gt; ?object
+}
+LIMIT 100</pre>
+
+            <table border="1 px" style="margin-bottom:10vh">
+              <tr><th>Object</th></tr> 
+              <tr><td>http://dbpedia.org/page/Mother</td></tr>
+              <tr><td>http://dbpedia.org/page/Republican</td></tr>
+              <tr><td>http://dbpedia.org/page/Victim</td></tr>
+              <tr><td>http://viaf.org/viaf/95748649</td></tr>
+              <tr><td>http://dbpedia.org/page/Picador</td></tr>
+              <tr><td>http://dbpedia.org/page/Fascism</td></tr>
+              <tr><td>http://dbpedia.org/ontology/victim</td></tr>
+              <tr><td>http://dbpedia.org/page/Pain</td></tr>
+              <tr><td>http://dbpedia.org/page/Spain</td></tr>
+              <tr><td>http://dbpedia.org/page/Woman </td></tr>
+              <tr><td>http://dbpedia.org/page/People</td></tr>
+              <tr><td>https://viaf.org/viaf/25400603/</td></tr>
+            </table>
+
+
+
+            <h5 style="text-decoration: underline; text-align:center; margin:5vh 0px"><b>Where are the interpretations of the bull contained?</b></h5>
+
+            <pre style="overflow: hidden">
+BASE &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+PREFIX sidro: &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+
+SELECT ?interpretation
+WHERE {
+  &lt;http://dbpedia.org/page/Bull&gt; &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents&gt; ?object.
+  ?object &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf&gt; ?interpretation.
+}
+LIMIT 100</pre>
+
+            <table border="1 px" style="margin-left:17vw; margin-bottom:10vh">
+              <tr><th>Interpretation</th></tr>
+              <tr><td>https://www.tandfonline.com/doi/abs/10.1080/00043249.1971.10792962</td></tr>
+              <tr><td>http://www.worldcat.org/oclc/8092684211</td></tr>
+              <tr><td>http://www.worldcat.org/oclc/4815222561</td></tr>
+              <tr><td>http://www.worldcat.org/oclc/185807296</td></tr>
+              <tr><td>https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118</td></tr>
+              <tr><td>https://doi.org/10.1016/j.pubrev.2017.10.006</td></tr>
+              <tr><td>http://www.worldcat.org/oclc/434261676</td></tr>
+              <tr><td>http://dx.doi.org/10.14195/0870-4112_11_19</td></tr>
+              <tr><td>http://dx.doi.org/10.1080/00043249.1974.10793200</td></tr>
+              <tr><td>https://doi.org/10.3200/TSSS.97.4.168-171</td></tr>
+              <tr><td>http://www.worldcat.org/oclc/715340995</td></tr>
+              <tr><td>http://www.worldcat.org/oclc/79248884</td></tr>
+            </table>
+
+
+
+            <h5 style="text-decoration: underline; text-align:center; margin:5vh 0px"><b>What does the bull represent and what is the description?</b></h5>
+
+            <pre style="overflow: hidden">
+BASE &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+PREFIX sidro: &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+
+SELECT ?object ?description
+WHERE {
+  &lt;http://dbpedia.org/page/Bull&gt; &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents&gt; ?object.
+  ?object &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf&gt; ?interpretation.
+  ?interpretation &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription&gt; ?description.
+  FILTER regex(?description, "bull").
+}
+LIMIT 100</pre>
+
+            <table border="1 px" style="margin-left:0px; margin-bottom:10vh; width:100%">
+            <tr><th>Object</th><th>Description</th></tr>
+            <tr><td>https://dictionary.cambridge.org/us/dictionary/english/winner</td>
+            <td>"Whether presented as ferocious or domesticated, is always the victor. Inevitably, the bull symbolizes a male principle"</td></tr>
+              
+            <tr><td>http://dbpedia.org/page/Spaniards</td>
+            <td>"The bull as a 'totemic' animal of Spain stands for the Spanish People, sheltering the Mother who represents the capital Madrid."</td></tr>
+
+            <tr><td>http://dbpedia.org/page/Bullfighting</td>
+            <td>"The meaning of the bull draws from Picasso home town bullfight events and better fits this interpretation to bring out pain and suffering"</td></tr>
+
+            <tr><td>http://dbpedia.org/page/Minotaur</td>
+            <td>"Although the Minotaur image itself docs not appear in Guernica, the conception of the bull-man or the man-bull underlies all the studies and the final image of the bull. Two studies of May 10 -the last sketches before the painting was laid out on the full-sized canvas depict the bull with the head of a man. Usually titled, inexplicably, Head of Bull (except on the Museum of Modern Art's label), this one clearly bears the sensitive human features of the classical hero type with only slight bullish modifications (Fig. 40). The other study shows the body of the bull with a clearly defined and realistic head of a man. These arc of course reversals of the Minotaur . who is a bull-headed man but they demonstrate the wide range of possibilities lying between the polar concepts of man and beast. Even the head of the bull in the final painting cannot be taken simply as the head of a bull, for it has many human characteristics, among them the upright posture of the head and its hairless skin. Most human of all arc the wide-open staring eyes that arc not unrelated to Picasso's own images of himself (Fig. 41). Thus the concept of the Minotaur, like the bull and the horse, is in a constant state of metamorphosis in both form and meaning. At one pole arc the hero types, the artist, king, and classical youth, and at the other is the beast who dies a miserable death as the fighting bull in the arena. http://dx.doi.org/10.1080/00043249.1974.10793200 (p 111-112)"</td></tr>
+              
+            <tr><td>http://dbpedia.org/page/People</td>
+            <td>"The hypothesis is that the bull better represents the people of Guernica in the painting"</td></tr>
+              
+            <tr><td>http://dbpedia.org/page/People</td>
+            <td>"[Juan] Larrea argued just the opposite: the bull was the people and the horse the Fascist enemy. Victims and victimizers had changed places. (Giunta, 2017, p. 5) https://doi.org/10.1016/j.pubrev.2017.10.006 p.29"</td></tr>
+              
+            <tr><td>http://dbpedia.org/page/Francoist_Spain</td>
+            <td>"According to [Jerome] Seckler, Picasso said that the bull represented barbarism and, therefore, Franquismo, and the horse the people, that is, the Republican people. https://doi.org/10.1016/j.pubrev.2017.10.006 p.29"</td></tr>
+              
+            <tr><td>http://dbpedia.org/page/Francoist_Spain</td>
+            <td>"The bull feature in the painting Guernica represents Franquismo from what picasso said"</td></tr>
+            </table>
+
+
+
+            <h5 style="text-decoration: underline; margin:5vh 0px; font-size:1.2em"><b>What is the provenance and the description of the provenance of the meaning of the symbol "Horse"?</b></h5>
+
+            <pre style="overflow: hidden">
+BASE &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+PREFIX sidro: &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0&gt;
+
+SELECT ?origin ?description
+WHERE {
+  &lt;http://dbpedia.org/page/Horse&gt; &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom&gt; ?origin.
+  ?origin &lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription&gt; ?description.
+  FILTER regex(?description, "horse").
+}
+LIMIT 100</pre>
+
+            <table border="1 px" style="margin-left:0px; width:100%">  
+              <tr><th>Origin</th><th>Description</th></tr>
+              <tr><td>http://dbpedia.org/page/Spanish_Civil_War</td>
+              <td>"The horse through its painting in suffering and pain is said to represent the Republican fraction of the Spanish civil war"</td></tr>
+                
+              <tr><td>http://dbpedia.org/page/Spanish_Civil_War</td>
+              <td>"The horse is taken as the enemy in the Spanish_Civil_War https://doi.org/10.1016/j.pubrev.2017.10.006 p.29"</td></tr>
+                
+              <tr><td>http://dbpedia.org/page/Spanish_Civil_War</td>
+              <td>"The horse can be a mare; the cut (vertical rhombus) takes the form of a vagina. It is Spain wounded by fascism, it is the victim of the picture. https://doi.org/10.1016/j.pubrev.2017.10.006 p.30"</td></tr>
+                
+              <tr><td>http://dbpedia.org/page/Spanish_Civil_War</td>
+              <td>"The horse is an image of Republican people"</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-2">
           <img class="img-fluid rose" id="knowgraph" src="img/kno-graph.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/geotatah" alt="" width="150px">
         </div>
         <div class="col-lg-5">
