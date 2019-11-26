@@ -1,0 +1,656 @@
+@prefix : <http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0>.
+@prefix crm: <http://cidoc-crm.org/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix edm: <http://www.europeana.eu/schemas/edm/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+#################################################################
+#    Painting
+#################################################################
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork>	crm:P102_has_title	<http://dbpedia.org/page/Guernica_(Picasso)>;
+	dcterms:created	"1937";
+	edm:happenedAt	<http://www.geonames.org/2988507/>;
+	rdf:type	<http://dbpedia.org/page/Oil_painting>;
+	dcterms:medium	<http://dbpedia.org/page/Canvas>;
+	crm:P55_has_current_location	<https://www.geonames.org/6452757/>;
+	crm:P19_was_intended_use_of	<https://viaf.org/viaf/163060943/>;
+	dc:relation	<http://dbpedia.org/page/Spanish_Civil_War>;
+	crm:P108_has_produced	<http://viaf.org/viaf/15873>.
+<http://viaf.org/viaf/15873>	crm:P131_is_identified_by	"Pablo Picasso";
+	dc:relation	crm:E7_Activity.
+crm:E7_Activity	dcterms:description	<http://dbpedia.org/page/Cubism>.
+<http://dbpedia.org/page/Canvas>	crm:P90_has_value	"349.3 cm  × 776.6 cm"; 
+	crm:P90_has_value	"137.4 in  × 305.5 in".
+<http://www.geonames.org/2988507/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Paris>.
+<https://www.geonames.org/6452757/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa>.
+<https://viaf.org/viaf/163060943/>	dcterms:description	"During the 1937 International Exposition of Art and Technology in Modern Life in Paris, France, the painting Guernica which was painted at the request of the Spagnish Nationalists was exhibited at the Spanish display being one of the artworks representing the Spanish pavilion.".
+
+#################################################################
+#    Historical Context
+#################################################################
+
+<http://www.geonames.org/2510769/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Spain>.
+<http://dbpedia.org/page/Spanish_Civil_War>	dcterms:description	"The Spanish Civil War (Spanish: Guerra Civil Española) was a civil war in Spain fought from 1936 to 1939. Republicans loyal to the left-leaning Second Spanish Republic, in alliance with anarchists, fought against a revolt by the Nationalists, an alliance of Falangists, monarchists, conservatives and Catholics, led by a military group among whom General Francisco Franco soon achieved a preponderant role. Due to the international political climate at the time, the war had many facets, and was variously viewed as class struggle, a war of religion, a struggle between dictatorship and republican democracy, between revolution and counterrevolution, between fascism and communism.";
+	edm:happenedAt	<http://www.geonames.org/2510769/>;
+	crm:P4_has_time-span	"1936-1939";
+	crm:P17_was_motivated_by	<https://en.wikipedia.org/w/index.phptitle=Background_of_the_Spanish_Civil_War&oldid=904110611>;
+	crm:P11_had_participant	<http://viaf.org/viaf/165864807>;
+	crm:P11_had_participant	<http://viaf.org/viaf/131906192>;
+	crm:P11_had_participant	<http://viaf.org/viaf/141520586>;
+	crm:P11_had_participant	<http://viaf.org/viaf/147093871>;
+	crm:P11_had_participant	<http://viaf.org/viaf/153767952>;
+	dc:relation	<http://dbpedia.org/page/Bombing_of_Guernica>.
+
+#################################################################
+#    Event
+#################################################################
+
+<http://dbpedia.org/page/Bombing_of_Guernica>	dcterms:description	"The bombing of Guernica (26 April 1937) was an aerial bombing of the Basque town of Guernica during the Spanish Civil War. It was carried out, at the behest of Francisco Franco's rebel Nationalist faction, by its allies, the Nazi German Luftwaffe's Condor Legion and the Fascist Italian Aviazione Legionaria, under the code name 'Operation Rügen'. The operation opened the way to Franco's capture of Bilbao and his victory in northern Spain.";
+	edm:happenedAt	<https://www.geonames.org/3120989/>;
+	crm:P4_has_time-span	"‎1937/04/26";
+	crm:P17_was_motivated_by	<http://dbpedia.org/page/Spanish_Civil_War>;
+	crm:P11_had_participant	"Citizens of Gernika Lumo.".
+<https://www.geonames.org/3120989/>	crm:P87_is_identified_by	<http://dbpedia.org/page/Guernica>.
+
+#################################################################
+#    Content
+#################################################################
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic>	<http://dbpedia.org/page/Category:War>;
+	rdf:subject	<http://dbpedia.org/page/Bombing_of_Guernica>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement>	<http://dbpedia.org/page/Bull>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://dbpedia.org/page/Horse>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://dbpedia.org/page/Soldier>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://dbpedia.org/page/Woman>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://dbpedia.org/page/Infant>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://vocab.getty.edu/page/aat/300056255>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement>	<http://dbpedia.org/page/Woman>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement>	<http://dbpedia.org/page/Infant>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Suffering of people and animals wrenched by violence and chaos.".
+<http://dbpedia.org/page/Bombing_of_Guernica>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Picasso painted 'Guernica' as immediate reaction to the bombing on the homologous Basque town during Spanish Civil War.".
+
+#################################################################
+#    Attia, Arnheim, Russell - Bull
+#################################################################
+
+<http://dbpedia.org/page/Bull>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://viaf.org/viaf/15873>.
+
+<http://viaf.org/viaf/15873>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/4815222561>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/185807296>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/8092684211>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Quotation>.
+
+<http://dbpedia.org/page/Quotation>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Picasso told Gilot that the bull was his symbol. http://www.worldcat.org/oclc/1231946".
+
+#################################################################
+#    Attia - Horse
+#################################################################
+		
+<http://dbpedia.org/page/Horse>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Mother>.
+
+<http://dbpedia.org/page/Mother>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/4815222561>.
+
+#################################################################
+#    Attia - Infant
+#################################################################
+		
+<http://dbpedia.org/page/Infant>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://viaf.org/viaf/15873>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Dead infant in the woman's arms.".
+
+<http://viaf.org/viaf/15873>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/4815222561>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://id.loc.gov/authorities/subjects/sh85014152.html>.
+
+<http://id.loc.gov/authorities/subjects/sh85014152.html>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Picasso’s birth was difficult and, despite the midwife’s efforts, he did not begin breathing immediately. Thinking him stillborn, she abandoned him to take care of the exhausted mother. Luckily, a doctor saved him. http://www.worldcat.org/oclc/1069858662".
+
+#################################################################
+#    Attia - Soldier
+#################################################################
+		
+<http://dbpedia.org/page/Soldier>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://viaf.org/viaf/15873>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Dead and dismembered soldier who lies under the horse.".
+
+<http://viaf.org/viaf/15873>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/4815222561>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Category:Unconscious>.
+
+<http://dbpedia.org/page/Category:Unconscious>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"'Picasso’s inner experience of disintegration'. http://www.worldcat.org/oclc/4815222561 (p.11)".
+
+#################################################################
+#    Attia - Composition
+#################################################################
+		
+<http://vocab.getty.edu/page/aat/300056255>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://id.loc.gov/authorities/subjects/sh85120086>. 
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"'Solitariness of the decimated figures.' http://www.worldcat.org/oclc/4815222561 (p.11)".
+
+<http://id.loc.gov/authorities/subjects/sh85120086> 	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/4815222561>;
+ 	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Category:Unconscious>.
+
+#################################################################
+#    Attia - Content
+#################################################################
+		
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/ontology/Earthquake>.
+
+<http://dbpedia.org/ontology/Earthquake>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/4815222561>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://id.loc.gov/authorities/subjects/sh85014152.html>.
+
+<http://id.loc.gov/authorities/subjects/sh85014152.html>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"'Late on the night of 25 December 1884, when Picasso was 3 years old, a massive earthquake devastated his hometown, Malaga. Lasting several days, the earthquake and its aftershocks left Malaga in ruins similar to those of the bombed-out town of Guernica. Fires burned, hundreds died, terror and chaos reigned as many inhabitants fled their homes, among them Picasso’s family.' http://www.worldcat.org/oclc/4815222561 (p. 4)".		
+
+#################################################################
+#    Arnheim, Russell - Woman
+#################################################################
+		
+<http://dbpedia.org/page/Woman>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Kneeling>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Category:Running>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Woman with an enlarged knee that touches the ground.".
+
+<http://dbpedia.org/page/Kneeling>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/185807296>.
+
+<http://dbpedia.org/page/Category:Running>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/8092684211>.
+
+#################################################################
+#    Attia's interpretation
+#################################################################
+		
+<http://www.worldcat.org/oclc/4815222561>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"doi: 10.1111/j.1745-8315.2011.00418.x";
+	crm:P108_was_produced_by	<http://viaf.org/viaf/98447638>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"'Picasso’s consent to publish the different stages of his work on the painting and his preparatory studies, as well as to exhibit them (Chipp, 1988), reveal his (both conscious and unconscious) need or wish to uncover contents that remain implicit unless one follows the entire output. Hence a psychological analysis of his work is not only permissible, but also explicitly suggested by its creator.' http://www.worldcat.org/oclc/4815222561 (p.2)";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"'A systematic, psychoanalytically oriented analysis of Picasso’s preparatory studies for his master-painting Guernica as well as of his many alterations in the course of his work on the painting itself revealed a prominent concern with issues of loss, death and destruction. Background information on the circumstances of Picasso’s work on the painting, his personality and his biography, as well as information gleaned from other of his works from various periods of his life were also taken into account. Integration of the direct findings from the analysis of Guernica’s evolution and from this comprehensive background information suggests that the process of creating Guernica represents a symbolic attempt at individuation and establishment of separateness from the mother, by means of aggressive acts expressed towards representations of the mother figure in the painting. The preparatory studies and the painting itself are perceived as transitional objects.' http://www.worldcat.org/oclc/4815222561 (abstract)";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	<http://www.worldcat.org/oclc/660051911>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	<http://www.worldcat.org/oclc/831406601>.		
+
+#################################################################
+#    Arnheim's interpretation
+#################################################################
+		
+<http://www.worldcat.org/oclc/8092684211>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	<https://repository.upenn.edu/svc/vol7/iss2/6>;
+	crm:P108_was_produced_by	<http://viaf.org/viaf/100176509>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject>	<http://www.worldcat.org/oclc/185807296>.
+		
+#################################################################
+#    Debate Arnheim/Gedo
+#################################################################
+
+<http://id.loc.gov/authorities/subjects/sh85034149.html>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject>	<http://dbpedia.org/ontology/Earthquake>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Arnheim claims that the involvement of the biography may be interest for the psychology of the creative process but may not add to our understanding of the painting";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<http://www.worldcat.org/oclc/8092684211>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<http://www.worldcat.org/oclc/660051911>.
+		
+#################################################################
+#    Debate Arnheim/Russell
+#################################################################
+
+<http://dbpedia.org/page/Accusation>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject>	<http://dbpedia.org/page/Kneeling>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"'Deceived by the detail of an enlarged knee that touches the ground, he ignores the compelling dynamics of the diagonal which propels the runner into the central group. This error has the grave consequence of depriving the bull's stable immobility of its uniqueness. If the woman on the right is considered equally immobile, the entire basic theme of the composition is destroyed: an inappropriate symmetry replaces the joint rush of the central figures toward the towering monument on the left.' http://www.worldcat.org/oclc/8092684211 (p. 6)";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<http://www.worldcat.org/oclc/8092684211>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<http://www.worldcat.org/oclc/185807296>.
+
+
+#################################################################
+#    Gottlieb - Bull
+#################################################################
+
+<http://dbpedia.org/page/Bull>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Spaniards>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spaniards>		
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118>.
+
+<https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The bull as a 'totemic' animal of Spain stands for the Spanish People, 	sheltering the Mother who represents the capital Madrid.";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	<https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer>	<https://viaf.org/viaf/17581516/>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	<http://dbpedia.org/page/The_Dream_and_Lie_of_Franco>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<https://wiki.lesswrong.com/wiki/Disagreement>;
+	crm:P108_was_produced_by	<https://viaf.org/viaf/41854551/>.
+
+<https://wiki.lesswrong.com/wiki/Disagreement>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://dbpedia.org/page/Bull>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation>	<https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<https://www.worldcat.org/title/picasso-and-the-bull/oclc/9862074>.
+<https://www.worldcat.org/title/picasso-and-the-bull/oclc/9862074>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The bull signifies the cruelty and brutality which overshadow our time.".
+
+#################################################################
+#    Gottlieb - Horse
+#################################################################
+
+<http://dbpedia.org/page/Horse>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/ontology/victim>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/ontology/victim>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<https://www.worldcat.org/title/picasso-and-the-bull/oclc/9862074>.
+
+<https://www.worldcat.org/title/picasso-and-the-bull/oclc/9862074>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The horse, faithful friend of man, is the pursued and defeated victim.";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	<https://www.worldcat.org/title/picasso-and-the-bull/oclc/9862074>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<https://en.wikipedia.org/wiki/Controversy>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer>	<https://viaf.org/viaf/17581516/>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	<http://dbpedia.org/page/The_Dream_and_Lie_of_Franco>;
+	crm:P108was_produced_by	<https://viaf.org/viaf/113965439/>.
+
+<https://en.wikipedia.org/wiki/Controversy> 
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://dbpedia.org/page/Horse>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation>	<https://www.worldcat.org/title/picasso-and-the-bull/oclc/9862074>.
+<https://www.worldcat.org/title/guernica-pablo-picasso/oclc/1467118>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The horse is Nationalist Spain, depicted in Her death throes. It cannot be the symbol of the martyrdrom of the Spanish People since Picasso treats this animal usually with hostility.".
+
+#################################################################
+#    Cantelupe - Bull
+#################################################################
+
+<http://dbpedia.org/page/Bull>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<https://dictionary.cambridge.org/us/dictionary/english/winner>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Biography>.	
+<https://dictionary.cambridge.org/us/dictionary/english/winner> 
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<https://www.tandfonline.com/doi/abs/10.1080/00043249.1971.10792962>.
+
+<https://www.tandfonline.com/doi/abs/10.1080/00043249.1971.10792962>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Whether presented as ferocious or domesticated, is always the victor. Inevitably, the bull symbolizes a male principle";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"The implied sexual element between bull and horse is made explicit in several variations on the bull-horse theme in which Picasso substitutes the Minotaur for the bull. At times violent and brutal, it attempts to rape a young girl; at other times humane and sensitive, it is van quished or thwarted by an innocent girl. And the artist's personal struggles are again given vivid expression.";	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	<http://dx.doi.org/10.1080/00043249.1971.10792961>;	
+	crm:P108_was_produced_by	"Eugene B. Cantelupe".
+
+#################################################################
+#    Cantelupe - Horse
+#################################################################
+
+<http://dbpedia.org/page/Horse>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/ontology/victim>;
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Biography>.
+<http://dbpedia.org/ontology/victim>
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<https://www.tandfonline.com/doi/abs/10.1080/00043249.1971.10792962>.
+
+<https://www.tandfonline.com/doi/abs/10.1080/00043249.1971.10792962>	
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The horse, portrayed only as gentle' and innocent, is always the victim. The horse symbolises a female principle.";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"This is underscored whenever Picasso features someone in the stalls watching the ring drama: either a young girl or an innocent child, displaying a pronounced classical profile that suggests purity, responds to the terror of the battle. And both girl and child are identified with the horse, a creature of goodness and feminine sensibility. These compositions express Picasso's private conflict between good and evil.";
+	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	<http://dx.doi.org/10.1080/00043249.1971.10792961>;
+	crm:P108_was_produced_by	"Eugene B. Cantelupe".
+
+###################################################################################################
+#     Herschel B. Chipp, Francoise Gilot,  - SYMBOL Bull in Guernica: Love, War, and the Bullfight
+###################################################################################################
+
+<http://dbpedia.org/page/Bull>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://dbpedia.org/page/Animal>.	
+
+<http://dbpedia.org/page/Bull>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Minotaur>;  
+                              	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<https://viaf.org/viaf/15873/>.
+								
+<http://dbpedia.org/page/Minotaur>  	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://dx.doi.org/10.1080/00043249.1974.10793200>; 
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/property/legend>.
+<http://dbpedia.org/property/legend>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"One of the figures who always appeared in most of the corrida scenes of Picasso".
+										
+<https://viaf.org/viaf/15873>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/1231946>; 
+   	                            <http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Quotation>.
+<http://dbpedia.org/page/Quotation>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Francoise Gilot quotes him as saying that her symbol is the horse while his, the proudest of all, is the bull.http://dx.doi.org/10.1080/00043249.1974.10793200 p.113".
+		
+###############################################
+#   Interpretations on the bull Herschel
+###############################################
+
+<http://dx.doi.org/10.1080/00043249.1974.10793200>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+													<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> "Although the Minotaur image itself docs not appear in Guernica, the conception of the bull-man or the man-bull underlies all the studies and the final image of the bull. Two studies of May 10 -the last sketches before the painting was laid out on the full-sized canvas depict the bull with the head of a man. Usually titled, inexplicably, Head of Bull (except on the Museum of Modern Art's label), this one clearly bears the sensitive human features of the classical hero type with only slight bullish modifications (Fig. 40). The other study shows the body of the bull with a clearly defined and realistic head of a man. These arc of course reversals of the Minotaur . who is a bull-headed man but they demonstrate the wide range of possibilities lying between the polar concepts of man and beast. Even the head of the bull in the final painting cannot be taken simply as the head of a bull, for it has many human characteristics, among them the upright posture of the head and its hairless skin. Most human of all arc the wide-open staring eyes that arc not unrelated to Picasso's own images of himself (Fig. 41). Thus the concept of the Minotaur, like the bull and the horse, is in a constant state of metamorphosis in both form and meaning. At one pole arc the hero types, the artist, king, and classical youth, and at the other is the beast who dies a miserable death as the fighting bull in the arena. http://dx.doi.org/10.1080/00043249.1974.10793200 (p 111-112)";
+													<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"These images and symbols constitute a kind of iconography of his life. They are often formulated in a quasi-Surrealist symbolism involving Minotaurs and women as well as the familiar theme of the struggle between the horse and the bull as taken from the corrida. The power of this imagery is demonstrated by unusually wide fluctuations of style which resulted from these emotionally overwhelming themes. http://dx.doi.org/10.1080/00043249.1974.10793200 p.100";
+													<crm:P108_was_produced_by>	<https://viaf.org/viaf/49276069/>;
+													<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	<http://dx.doi.org/10.1080/00043249.1974.10793200>.
+
+###############################################
+#   Interpretations on the bull Gilot
+###############################################
+													
+<http://www.worldcat.org/oclc/1231946>  	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> "Francoise Gilot quotes him as saying that her symbol is the horse while his, the proudest of all, is the bull.http://dx.doi.org/10.1080/00043249.1974.10793200 p.113";
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"Picasso has always insisted on the personal sources of his art. I use things in my paintings as my passions tell me, he told Zervos in 1935, and later told Penrose that we live our work. Francoise Gilot quotes him as saying that he paints his autobiography, but Kahnweiler puts it more directly as his subjects are his loves. http://dx.doi.org/10.1080/00043249.1974.10793200 p.113";
+											<crm:P108_was_produced_by> <http://viaf.org/viaf/95748649>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	 "Life with Picasso. by Francoise Gilot and Carlton Lake.  New York. McGrawHill. 1964. p. 362.http://www.worldcat.org/oclc/1231946".
+										
+############################################################################################################################################################	# Jordi Xifra, Robert L. Heath, Gaya J. A. , Juan Larrea, Giunta, A.(Jerome Seckler and Juan Larrea)- SYMBOL Bull- in Publicizing Atrocity and Legitimizing # Outrage: Picasso’s Guernica
+############################################################################################################################################################
+
+<http://dbpedia.org/page/Bull>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://dbpedia.org/page/Animal>.	
+
+<http://dbpedia.org/page/Bull>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Bullfighting>;
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Nazism>;
+                                <http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Category:Nationalists>;
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>    <http://dbpedia.org/page/Francoist_Spain>;
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/People>.
+
+##########################################	  
+#   Interpretations on the bull JORDI
+##########################################
+
+<http://dbpedia.org/page/Bullfighting>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<https://doi.org/10.1016/j.pubrev.2017.10.006>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Ritual>.
+<http://dbpedia.org/page/Ritual>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"In 1945, Picasso told Jerome Seckler: 'The bull is not fascism, it is brutality, darkness' (Posada, 1988, p. 117). It possibly refers to bullfighting, the traditional blood sport of Spanish culture, during which bulls are successively sacrificed in the ring. https://doi.org/10.1016/j.pubrev.2017.10.006 p.30".
+<https://doi.org/10.1016/j.pubrev.2017.10.006>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The meaning of the bull draws from Picasso home town bullfight events and better fits this interpretation to bring out pain and suffering";
+												<crm:P108_was_produced_by>	                                            <https://viaf.org/viaf/31474715/>;
+												<crm:P108_was_produced_by>	                                             <https://viaf.org/viaf/41868397>;
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"The bull had symbolic capital for Picasso. He was born in the Andalusian city of Malaga — the ancient home of bullfighting (Tsai, 2014). In a lecture on the spirit of Spain, the Andalusian poet Federico Garcia Lorca, whose photograph graced the opposite side of the Spanish Pavilion to Picasso’s Guernica, said 'Spain is the only country where death in a natural spectacle' (Ross, 2013, p. 465). For Picasso, being a true Andalusian included having an obsession with suffering, wounds and the proximity of death.Unwilling to renounce one of the world’s last primitive rituals of sacrifice, Picasso was drawn to thebarbaric and instinctual pleasures of his 'Black Spain.' The bullfight was a muse for Picasso throughout the 1930s, just as it was a hundred years earlier for his mentor Francisco de Goya (Arnheim, 2006). https://doi.org/10.1016/j.pubrev.2017.10.006 p. 30-31";
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	 " Publicizing atrocity and legitimizing outrage: Picasso’s Guernica by  Jordi Xifra, Robert L. Heath".
+
+###############################################
+#   Interpretations on the bull GAYA
+###############################################
+
+<http://dbpedia.org/page/Nazism>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/434261676>;
+									<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Aggression>.
+<http://dbpedia.org/page/Aggression>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"In contrast to the screaming horse is the passive bull, which Gaya (1975, Wischnitzer, 1985) reasoned, represents Nazi aggression, the dark forces. https://doi.org/10.1016/j.pubrev.2017.10.006 p.29".
+<http://www.worldcat.org/oclc/434261676>  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>.  
+
+###############################################
+#   Interpretations on the bull ROSS
+###############################################
+
+<http://dbpedia.org/page/Category:Nationalists>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://dx.doi.org/10.14195/0870-4112_11_19>;
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"As Ross (2013) argued, Guernica indicted the atrocity committed by the Nationalists (who are signaled by the bull).  https://doi.org/10.1016/j.pubrev.2017.10.006 p.25".
+<http://dx.doi.org/10.14195/0870-4112_11_19> 	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>.  
+
+###############################################
+#   Interpretations on the bull Jerome
+###############################################
+
+<http://dbpedia.org/page/Francoist_Spain>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	  <http://www.worldcat.org/oclc/79248884>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"According to [Jerome] Seckler, Picasso said that the bull represented barbarism and, therefore, Franquismo https://doi.org/10.1016/j.pubrev.2017.10.006 p.29".
+<http://www.worldcat.org/oclc/79248884> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The bull feature in the painting Guernica represents Franquismo from what picasso said";	
+										<crm:P108_was_produced_by>											 <http://worldcat.org/entity/person/id/2691868883>;	
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"The characteristics of the Franquismo";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Giunta, A. (2017). The Power of Interpretation (or How MoMA explained Guernica to its audience. Artelogie, 10: http://artelogie.revues.org/953",  " http://www.worldcat.org/oclc/79248884 Interview with Picasso, Paris, 1945";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<http://dbpedia.org/page/Argumentation_theory>.
+
+###############################################
+#   Interpretations on the bull JUAN
+###############################################
+										
+<http://dbpedia.org/page/People>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.worldcat.org/oclc/715340995>;
+									<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	 "[Juan] Larrea argued just the opposite: the bull was the people  https://doi.org/10.1016/j.pubrev.2017.10.006 p.29".
+<http://www.worldcat.org/oclc/715340995>   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+										   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The hypothesis is that the bull better represents the people of Guernica in the painting";	
+										   <crm:P108_was_produced_by>	                                        <http://viaf.org/viaf/41854551>;	
+										   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"His own interpretation of symbol";
+										   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Giunta, A. (2017). The Power of Interpretation (or How MoMA explained Guernica to its audience. Artelogie, 10: http://artelogie.revues.org/953"; 
+										   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>      "Larrea, Juan Juan Larrea. Guernica. New York. Valentin. 1947. p. 33. http://www.worldcat.org/oclc/715340995";
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<http://dbpedia.org/page/Argumentation_theory>.
+										   
+######################################	  
+#   Debate on the bull JUAN VS Jerome
+######################################
+
+<http://dbpedia.org/page/Argumentation_theory> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject>	<http://dbpedia.org/page/Bull>;
+											   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The question of the representativeness of the bull. According to [Jerome] Seckler, Picasso said that the bull represented barbarism and, therefore, Franquismo, and the horse the people, that is, the Republican people. [Juan] Larrea argued just the opposite: the bull was the people and the horse the Fascist enemy. Victims and victimizers had changed places. (Giunta, 2017, p. 5) https://doi.org/10.1016/j.pubrev.2017.10.006 p.29";
+											   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	  <http://www.worldcat.org/oclc/79248884>;
+											   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	 <http://www.worldcat.org/oclc/715340995>.
+
+####################################################################################################
+#     Herschel B. Chipp, Francoise Gilot,  - SYMBOL HORSE in Guernica: Love, War, and the Bullfight
+####################################################################################################
+
+<http://dbpedia.org/page/Horse> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://dbpedia.org/page/Animal>.	
+
+<http://dbpedia.org/page/Horse>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Victim>;
+							    <http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://viaf.org/viaf/95748649>;
+	                            <http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Woman>;
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<https://viaf.org/viaf/25400603/>.
+								
+<http://dbpedia.org/page/Victim>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://dx.doi.org/10.1080/00043249.1974.10793200>;
+                                 	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Encounter>.
+<http://dbpedia.org/page/Encounter>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"In avoiding completely the man-bull contest, the most meaningful and hence most emotionally charged episode, and instead choosing the bull-horse encounter, Picasso provides a context which, precisely because it lacks ritual significance, offers vaster potentialities for the expression of other wider meanings. http://dx.doi.org/10.1080/00043249.1974.10793200 p.106".
+
+
+<http://viaf.org/viaf/95748649>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	 <http://www.worldcat.org/oclc/1231946>;
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Quotation>.
+<http://dbpedia.org/page/Quotation>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Francoise Gilot quotes Picasso as saying that her symbol is the horse while his, the proudest of all, is the bull".								
+								
+<http://dbpedia.org/page/Woman>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	 <http://www.worldcat.org/oclc/715340995>;	
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://id.loc.gov/authorities/subjects/sh85014152.html>.
+<http://id.loc.gov/authorities/subjects/sh85014152.html>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Juan Larrea writes that Picasso told him before Guernica that the horse in his art represents for him the most important women in his life. http://dx.doi.org/10.1080/00043249.1974.10793200 p.113".
+
+<https://viaf.org/viaf/25400603/>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/221602933>;
+									<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Past>.
+<http://dbpedia.org/page/Past>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"From the previous paintings Picasso did during moments of crisis where she always appeared. The clearest and most emphatic image in the first sketch is the alarmed observer leaning from the upper window. Her identity is made clear in a detail from the third sketch of May 1 where the most familiar profile in all of Picasso's art appears (Fig. 6). It closely resembles Marie-Therese Walter whose face and body had dominated his art since 1931 (Fig. 7). She is lightly touched up with ochre paint-the only paint used that day. The Marie-Therese profile had often appeared throughout these troubled years as a sympathetic observer-usually of scenes of crisis-but always as a serene and gentle onlooker http://dx.doi.org/10.1080/00043249.1974.10793200 p.103".
+
+##################################	  
+#   Interpretations on the HORSE
+##################################
+
+<http://dx.doi.org/10.1080/00043249.1974.10793200>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#PerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+													<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> "The pathos of the suffering horse lends itself to the subject of the suffering of the victims of Guernica, just as it had served to express states of suffering in Picasso's own years of personal conflict. http://dx.doi.org/10.1080/00043249.1974.10793200 p.106";
+													<crm:P108_was_produced_by>	                                          <https://viaf.org/viaf/49276069/>;
+													<http://www.semanticweb.org/ontologies/2019/11/SIDRO#:hasStartingAssumption>	"The suffering and pain of the people of Guernica after the bombing.";
+													<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	    "Herschel B. Chipp (1973) Guernica: Love, War, and the Bullfight, Art Journal, 33:2, 100-115  http://dx.doi.org/10.1080/00043249.1974.10793200". 
+
+########################################
+#   Interpretations on the HORSE Gilot
+########################################
+	
+<http://www.worldcat.org/oclc/1231946>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#PerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;													
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The idea that the horse in the painting represents a woman i.e self Francoise Gilot herself.";
+									   <crm:P108_was_produced_by>													<http://viaf.org/viaf/95748649>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#:hasStartingAssumption>	"The fact that figure of the horse is most of the time associated to a woman."; 
+   										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	 "Francoise Gilot and Carlton Lake. Life with Picasso. New York. McGrawHill. 1964. p. 362 http://www.worldcat.org/oclc/1231946".
+
+#######################################	  
+#   Interpretations on the HORSE LAREA
+#######################################
+										
+<http://www.worldcat.org/oclc/715340995>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#PerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The meaning behind the horse in Picasso's paintings relates to his personal life and represents most of the time a woman.";
+										<crm:P108_was_produced_by>													<http://viaf.org/viaf/41854551>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"Picasso has always insisted on the personal sources of his art. I use things in my paintings as my passions tell me, he told Zervos in 1935, and later told Penrose that we live our work. Francoise Gilot quotes him as saying that he paints his loves, but Kahnweiler puts it more directly as his subjects are his loves http://dx.doi.org/10.1080/00043249.1974.10793200115  P.113";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	        "Larrea, Juan Juan Larrea. Guernica. New York. Valentin. 1947. p. 33. http://www.worldcat.org/oclc/715340995";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	<http://www.worldcat.org/oclc/1231946>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>  <http://www.worldcat.org/oclc/221602933>.
+
+######################################	  
+#   Interpretations on the HORSE JOSE
+######################################
+										
+<http://www.worldcat.org/oclc/221602933>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#PerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"An Inquiry Into Picasso's Poetic imagery. In a perceptive study of Picasso's poems of November 6-December 24 1935. Jose Barrio-Garay in a paper. An Inquiry Into Picasso's Poetic imagery read at the meeting of the CAA on January 1973. provides by an analysis of the imagery of the poems interesting and important evidence that horse is closely associated with the state of affairs with the woman in his life. Marie-Therese Walter. Since some first-hand witnesses. including Larrea and Françoise Gilot. quote Picasso to the effect that his horses are indeed associated with women in his life at the time. we may reasonably study images of horses in his art in terms of his corresponding personal life. http://dx.doi.org/10.1080/00043249.1974.10793200 p.115";
+										<crm:P108_was_produced_by>												<http://viaf.org/viaf/62791966>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#:hasStartingAssumption>	"The personal life affairs of Picasso";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Jose Gutierrez Solana : paintings and writings by Jose L. Barrio-Garay http://www.worldcat.org/oclc/221602933".
+
+
+############################################################################################################################################################	# Jordi Xifra, Robert L. Heath, Gaya J. A. , Juan Larrea, Giunta, A.(Jerome Seckler and Juan Larrea)- SYMBOL HORSE- in Publicizing Atrocity and Legitimizing # Outrage: Picasso’s Guernica
+############################################################################################################################################################
+
+<http://dbpedia.org/page/Horse>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://dbpedia.org/page/Animal>.	
+
+<http://dbpedia.org/page/Horse>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>	<http://dbpedia.org/page/Republican>;
+			        <http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/People>;
+				<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Fascism>;
+				<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Pain>;
+				<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Spain>;
+				<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Picador>;
+				<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Victim>.
+
+######################################	  
+#   Interpretations on the HORSE 
+######################################
+																								
+<http://dbpedia.org/page/Pain>			<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	"Equinos picassianos. Unpublished PhD Dissertation. Madrid: Universidad Complutense de Madrid., by Barbadilla, J. A. (2010)".
+<http://dbpedia.org/page/Picador>		 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	"Equinos picassianos. Unpublished PhD Dissertation. Madrid: Universidad Complutense de Madrid, by Barbadilla, J. A. (2010)".
+<http://dbpedia.org/page/Victim>		<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	"Equinos picassianos. Unpublished PhD Dissertation. Madrid: Universidad Complutense de Madrid, by Barbadilla, J. A. (2010)".
+
+######################################	  
+#   Interpretations on the HORSE ROSS 
+######################################
+
+<http://dbpedia.org/page/Republican>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://dx.doi.org/10.14195/0870-4112_11_19>;
+					<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The horse through its painting in suffering and pain is said to represent the Republican fraction of the Spanish civil war".																								
+<http://dx.doi.org/10.14195/0870-4112_11_19> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The heroic, defiant Republicans were represented by the mutilated horse’s upturned head, slain warrior, and anguishing women. https://doi.org/10.1016/j.pubrev.2017.10.006 p.25";
+											crm:P108_was_produced_by													<http://viaf.org/viaf/47148752014641200466>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	  <http://www.worldcat.org/oclc/79248884>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	 "Ross, S. T. (2013). Art propaganda: The many lives of Picasso’s Guernica. Biblos, XI, 455-474.  http://dx.doi.org/10.14195/0870-4112_11_19".
+
+######################################	  
+#   Interpretations on the HORSE RAY
+######################################
+											
+<http://dbpedia.org/page/People>		<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>		<https://doi.org/10.3200/TSSS.97.4.168-171>; 
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> "The is taken as an image to show the effets and consequesces of the Spanish civil war and Bombing of Guernica".
+<https://doi.org/10.3200/TSSS.97.4.168-171>  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The injured horse alludes to the thousands of people who died and the hundreds who were devastatingly hurt. https://doi.org/10.1016/j.pubrev.2017.10.006 p.28";
+											<crm:P108_was_produced_by>	                                            <https://viaf.org/viaf/34172397/>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Ray, B. (2006). Analyzing political art to get at historical fact: Guernica and the Spanish Civil War. Social Studies, 97(4), 168-171".
+
+#########################################	  
+#   Interpretations on the HORSE JUAN
+#########################################
+											
+<http://dbpedia.org/page/Fascism>		<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> 		<http://www.worldcat.org/oclc/715340995>;											
+						<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The horse is taken as the enemy in the Spanish_Civil_War https://doi.org/10.1016/j.pubrev.2017.10.006 p.29".
+<http://www.worldcat.org/oclc/715340995>   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	" [Juan] Larrea argued just the opposite: the bull was the people and the horse the Fascist enemy. Victims and victimizers had changed places. (Giunta, 2017, p. 5) https://doi.org/10.1016/j.pubrev.2017.10.006 p.29";
+											<crm:P108_was_produced_by>	                                             <http://viaf.org/viaf/41854551>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"The Power of Interpretation (or How MoMA explained Guernica to its audience by Giunta, A. (2017).  Artelogie, 10: http://artelogie.revues.org/953 ,Juan Larrea. Guernica. New York. Valentin. 1947. p. 33. http://www.worldcat.org/oclc/715340995";
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<http://dbpedia.org/page/Disputation>.																				
+
+##########################################	  
+#   Interpretations on the HORSE JEROME
+##########################################											
+											
+<http://dbpedia.org/page/Republican>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/79248884>;											
+			                <http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The horse is an image of Republican people".											
+<http://www.worldcat.org/oclc/79248884>   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"According to [Jerome] Seckler, Picasso said that the bull represented barbarism and, therefore, Franquismo, and the horse the people, that is, the Republican people. https://doi.org/10.1016/j.pubrev.2017.10.006 p.29";
+											<crm:P108_was_produced_by>	                                          <http://worldcat.org/entity/person/id/2691868883>;	
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"The Power of Interpretation (or How MoMA explained Guernica to its audience by Giunta, A. (2017) Artelogie, 10: http://artelogie.revues.org/953",  " http://www.worldcat.org/oclc/79248884 Interview with Picasso, Paris, 1945";	
+											<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<http://dbpedia.org/page/Disputation>.
+
+#########################################	  
+#   Interpretations on the HORSE JORDI
+#########################################									
+											
+<http://dbpedia.org/page/Spain>			<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>      <https://doi.org/10.1016/j.pubrev.2017.10.006>;											
+										 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>   "The horse can be a mare; the cut (vertical rhombus) takes the form of a vagina. It is Spain wounded by fascism, it is the victim of the picture. https://doi.org/10.1016/j.pubrev.2017.10.006 p.30".  											
+<https://doi.org/10.1016/j.pubrev.2017.10.006>  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+						<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> "Thus, the horse is a tormented animal. It is dying. It carries a spike in its back. Between its legs appears the corpse of a dismembered warrior who holds a broken sword. His tongue is like a dagger or a fragment of glass that symbolizes the cry of terror and pain of the animal. The horse can be a mare; the cut (vertical rhombus) takes the form of a vagina. It is Spain wounded by fascism, it is the victim of the picture. The horseshoe is inside the helmet, a symbol of bad luck https://doi.org/10.1016/j.pubrev.2017.10.006 p.30-31";
+						crm:P108_was_produced_by	<https://viaf.org/viaf/31474715/>;
+						crm:P108_was_produced_by	<https://viaf.org/viaf/41868397/>;
+						<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Publicizing atrocity and legitimizing outrage: Picasso’s Guernica by  Jordi Xifra, Robert L. Heath".
+												
+##################################	  
+#   Debate HORSE
+##################################
+
+<http://dbpedia.org/page/Disputation>  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject>	<http://dbpedia.org/page/Horse>;
+									   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The metaphorical meaning of the horse figure in the painting Guernica. According to [Jerome] Seckler,Picasso said that the bull represented barbarism and, therefore, Franquismo, and the horse the people, that is, the Republican people. [Juan] Larrea argued just the opposite: the bull was the people and the horse the Fascist enemy. Victims and victimizers had changed places. (Giunta, 2017, p. 5) https://journals.openedition.org/artelogie/953";
+									<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	  <http://www.worldcat.org/oclc/79248884>;
+									<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	 <http://www.worldcat.org/oclc/715340995>.
+									
+##################################	  
+#   SYMBOL MOTHER 
+##################################
+
+<http://dbpedia.org/ontology/mother>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>.
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Woman with dead infant in her arms".
+
+<http://dbpedia.org/ontology/mother>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents>  <http://dbpedia.org/page/Refugee>;
+                                        <http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://dbpedia.org/page/Film>.
+																										
+<http://dbpedia.org/page/Refugee>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/888402392>;																										
+									<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Spanish_Civil_War>.
+<http://dbpedia.org/page/Spanish_Civil_War>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The Spanish civil war and Guernica Bombing which caused the people to run away".
+																											
+
+<http://dbpedia.org/page/Film>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<http://www.worldcat.org/oclc/807214305>;
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf>	<https://doi.org/10.1016/j.pubrev.2017.10.006>;     																	
+								<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom>	<http://dbpedia.org/page/Cinema>.
+<http://dbpedia.org/page/Cinema>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"From a scene of the film Battleship Potemkin  which premiered in Paris at a cinema-club on November 12, 1926".
+
+									
+##################################	  
+#   INTERPRETATION MOTHER POSODA
+##################################
+
+<http://www.worldcat.org/oclc/888402392>  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+					  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The inspiration behind the figure of the woman with the dead child in her arms in the painting Guernica is a film scene which had great succes in 1926";
+					  crm:P108_was_produced_by	  <https://viaf.org/viaf/85959413/>;
+					  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Posada, T. (1988). Picasso y el cine: El Guernica y El Acorazado Potemkin. Boletín del Museo del Prado, 9(25-27), 110-117";
+					  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>  "The influence of cinema";
+				          <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	<http://dbpedia.org/page/Dispute>.
+								
+##################################	  
+#   INTERPRETATION MOTHER Chipp
+##################################	
+										
+<http://www.worldcat.org/oclc/807214305>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The woman with the dead child in her arms crying represents the the people who ran away from Guernica after the bombing.";
+										crm:P108_was_produced_by	                                           <https://viaf.org/viaf/49276069/>;
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	"Chipp, H. B. (1988). Picasso’s Guernica: History, transformations, meanings. Berkeley, CA: University of California Press";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption> "The update of the plastic language of art while maintaining a classic theme";
+										<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn>	        <http://dbpedia.org/page/Dispute>.
+								
+##################################	  
+#   INTERPRETATION MOTHER JORDI
+##################################
+										
+<https://doi.org/10.1016/j.pubrev.2017.10.006>  <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs>	<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative>;
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"Picasso was part of an artistic revolution dedicated to updating the plastic language of art while maintaining a classic theme (Posada, 1988). This approach is evident in the long iconographic tradition —religious and profane— in Western art, of the massacre of innocents. In this way, Picasso may have been influenced by the scene of the massacre on the Odessa staircase in Sergei M. Eisenstein's Battleship Potemkin (1925). Also, the tradition of black and white film probably inspired Picasso; without the influence of black and white cinema, Guernica might have been painted in color. https://doi.org/10.1016/j.pubrev.2017.10.006 p.26-27";
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource>	" Publicizing atrocity and legitimizing outrage: Picasso’s Guernica by  Jordi Xifra, Robert L. Heath. https://doi.org/10.1016/j.pubrev.2017.10.006";
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption>	"The plastic language of art while maintaining a classic theme";
+												<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation>	<http://www.worldcat.org/oclc/888402392>;
+												<crm:P108_was_produced_by>	                                                             <https://viaf.org/viaf/31474715/>;
+												<crm:P108_was_produced_by>	                                                              <https://viaf.org/viaf/41868397/>.
+							
+##################################	  
+#   DEBATE MOTHER CHIPP VS Posada
+##################################	
+
+<http://dbpedia.org/page/Dispute>   <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject>	<http://dbpedia.org/ontology/mother>;
+                                    <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription>	"The origin of the mother and dead infant in her arms.  Chipp (1988) claimed that Picasso was inspired by similar photographic images of refugees, women and children who fled Guernica, that appeared in newspapers days before the painting. Posada (1988) argued that the reinterpretation of the mother, who, with her son dead in her arms, shouts in Guernica as in the chilling scene of Eisenstein’s film. The posture of the child (head and arms hanging lifeless) is exactly the same as that of the child in the Battleship Potemkin which premiered in Paris at a cinema-club on November 12, 1926  https://doi.org/10.1016/j.pubrev.2017.10.006 p.27";
+				    <http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<http://www.worldcat.org/oclc/807214305>;
+				    <http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves>	<http://www.worldcat.org/oclc/888402392>.
+
+
+
+
+
+
+
+
