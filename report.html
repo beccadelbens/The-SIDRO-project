@@ -966,33 +966,23 @@
         <div class="col-lg-12">
           <div class="p-5">
             <h2 class="display-4">SIDRO on Guernica</h2>
-            <p>In this last section we queried our description of Guernica to infer knowledge through the results. For this task we used a web service called <a href="https://jena.apache.org/documentation/fuseki2/">Apache Jena Fuseki</a> which allows us to upload our description document, written in Turtle, and query it using SPARQL. 
-We executed several queries which gave us the following results.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <p>From our sources, after the automatic extraction and the collection of the results we were interested in, we went ahead to apply our ontology (SIDRO) on the painting and, for what concerns the symbols, on the most prominent ones.</p>
+            <p>To fill our knowledge graph through <a href="https://wiki.dbpedia.org/"target="_blank">DBpedia</a>, we used a simple SPARQL query:</p>
+            <pre>
+            PREFIX : <http://dbpedia.org/resource/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5">
-        </div>
-        <div class="col-lg-2">
-          <img class="img-fluid rose" id="knowgraph" src="img/kno-graph.png" data-toggle="tooltip" data-placement="top" title="Icon made by https://www.flaticon.com/authors/geotatah" alt="" width="150px">
-        </div>
-        <div class="col-lg-5">
-        </div>
-        <div class="col-lg-12">
-          <div class="p-5">
-            <h2 class="display-4">Knowledge graph</h2>
-            <p>For the realization of the knowledge graph we used the web service <a href="http://www.ldf.fi/service/rdf-grapher"target="_blank">RDF grapher</a>, which parses data and creates a graph visualization. As input data for the grapher we used the Turtle serialization of our ontology. The result can be seen <a href="graph_completo.png" target="_blank">here</a>.</p>
+            SELECT ?s WHERE {
+            ?s rdfs:label "GUERNICA"@en
+            }
+            </pre>
+            <p>In the other cases, we used URIs from <a href="https://viaf.org/"target="_blank">VIAF</a>, <a href="https://www.geonames.org/"target="_blank">GeoNames</a>, <a href="https://www.worldcat.org/"target="_blank">WorldCat</a>, <a href="http://id.loc.gov/authorities/subjects.html"target="_blank">Library of Congress Subject Headings (LCSH)</a>, <a href="http://www.getty.edu/research/tools/vocabularies/aat/"target="_blank">Art &copy; Architecture Thesaurus (AAT)</a>.</p>
+            <p>The output of this process can be seen <a href="turtle_completo.ttl"target="_blank" download>here</a>.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>  
+  </section> 
     
   <section>
     <div class="container">
